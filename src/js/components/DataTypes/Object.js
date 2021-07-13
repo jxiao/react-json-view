@@ -230,7 +230,7 @@ class RjvObject extends React.PureComponent {
                         }}
                     >
                         {object_type === 'array' ? ']' : '}'}
-                    </span>
+                    </span>,
                     {expanded ? null : this.getObjectMetaData(src)}
                 </span>
             </div>

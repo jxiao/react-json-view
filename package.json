@@ -1,6 +1,6 @@
 {
-    "name": "react-json-view",
-    "description": "Interactive react component for displaying javascript arrays and JSON objects.",
+    "name": "react-json-view-extended",
+    "description": "Interactive react component for displaying javascript arrays and JSON objects. Forked from 'react-json-view'",
     "version": "1.21.3",
     "main": "dist/main.js",
     "dependencies": {
@@ -68,7 +68,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/mac-s-g/react-json-view.git"
+        "url": "https://github.com/jxiao/react-json-view.git"
     },
     "keywords": [
         "array-viewer",

@@ -223,30 +223,30 @@ class VariableEditor extends React.PureComponent {
             case false:
                 return this.getEditInput();
             case 'string':
-                return <JsonString value={variable.value} {...props} />;
+                return <><JsonString value={variable.value} {...props} />,</>;
             case 'integer':
-                return <JsonInteger value={variable.value} {...props} />;
+                return <><JsonInteger value={variable.value} {...props} />,</>;
             case 'float':
-                return <JsonFloat value={variable.value} {...props} />;
+                return <><JsonFloat value={variable.value} {...props} />,</>;
             case 'boolean':
-                return <JsonBoolean value={variable.value} {...props} />;
+                return <><JsonBoolean value={variable.value} {...props} />,</>;
             case 'function':
-                return <JsonFunction value={variable.value} {...props} />;
+                return <><JsonFunction value={variable.value} {...props} />,</>;
             case 'null':
-                return <JsonNull {...props} />;
+                return <><JsonNull {...props} />,</>;
             case 'nan':
-                return <JsonNan {...props} />;
+                return <><JsonNan {...props} />,</>;
             case 'undefined':
-                return <JsonUndefined {...props} />;
+                return <><JsonUndefined {...props} />,</>;
             case 'date':
-                return <JsonDate value={variable.value} {...props} />;
+                return <><JsonDate value={variable.value} {...props} />,</>;
             case 'regexp':
-                return <JsonRegexp value={variable.value} {...props} />;
+                return <><JsonRegexp value={variable.value} {...props} />,</>;
             default:
                 // catch-all for types that weren't anticipated
                 return (
                     <div class="object-value">
-                        {JSON.stringify(variable.value)}
+                        {JSON.stringify(variable.value)},
                     </div>
                 );
         }
